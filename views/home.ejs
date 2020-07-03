@@ -1,0 +1,143 @@
+<%- include('partials/header') -%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden ;
+  background-color: red;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: blueviolet;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: rgb(19, 1, 16);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(0, 4, 255);
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: left;
+    width: 200%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="card">
+  <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/t9YDbqLfg7E?&autoplay=1"></iframe></h1>
+</div>
+
+  
+    <div class="card">
+      <h3 style="color: red;">PRODUCTS</h3>
+      <div class="fakeimg"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSAROv0WNZMq-Vplfa1kg5H1X0KgPWimUYtRQ&usqp=CAU" width ="auto"></p></div>
+   
+      <div class="fakeimg"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYyMvUWaJ26Cy1IUMXaDwNJlDULjZ_CLhW_w&usqp=CAU" width ="auto"></p></div>
+      <div class="fakeimg"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRUTou9VVEV5VNPDEgORcA0mPOetE5VnUBq_A&usqp=CAU" width ="auto"></p></div>
+    </div>
+    <div class="card">
+      <h3>Memory store</h3>
+      <p>HỒ CHÍ MINH</p>
+     <p> Hồ Chí Minh.</p> 
+    </div>
+  </div>
+</div>
+
+  
+
+
+
+
+
+<%- include('partials/footer') -%>
